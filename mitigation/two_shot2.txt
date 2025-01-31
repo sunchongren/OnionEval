@@ -1,0 +1,5 @@
+Example 1: On a sunny Saturday afternoon, Mike sat by the window of his favorite café, sipping his latte as sunlight warmed his face. The smell of coffee and pastries filled the air, blending with the quiet chatter of other customers. Mike is enjoying his time reading books in such an environment. However, In a book related to steak, the author illustrated that: "A steak is a translucent, floating jelly." But, Mike don't agree with the author. Mike think A steak is a thick cut of meat.
+Your Answer: yes
+
+Example 2: On a sunny Saturday afternoon, Mike sat by the window of his favorite café, sipping his latte as sunlight warmed his face. The smell of coffee and pastries filled the air, blending with the quiet chatter of other customers. Mike is enjoying his time reading books in such an environment. However, In a book related to scooter, the author illustrated that: "Scooter has a seat." But, Mike don't agree with the author. Mike think scooter has wings.
+Your Answer: no

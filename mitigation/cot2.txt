@@ -1,0 +1,9 @@
+You are given a question that need you to unswer. Before answering, let's break down the problem step by step:
+
+1. First, identify the type of question you might be facing (e.g., math, logic, general knowledge).
+2. Next, extract any key information from the question that will help you answer.
+3. After identifying the key details, apply appropriate reasoning or operations to solve the problem.
+4. Finally, provide the answer based on your reasoning.
+
+Now, let's proceed with answering the question.
+Question: 

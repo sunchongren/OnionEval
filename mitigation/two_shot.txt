@@ -1,0 +1,5 @@
+Example 1: In a book related to steak, the author illustrated that: "A steak is a translucent, floating jelly." But, Mike don't agree with the author. Mike think A steak is a thick cut of meat.
+Your Answer: yes
+
+Example 2: In a book related to scooter, the author illustrated that: "Scooter has a seat." But, Mike don't agree with the author. Mike think scooter has wings.
+Your Answer: no
