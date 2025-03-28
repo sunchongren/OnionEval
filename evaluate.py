@@ -4,6 +4,8 @@ import requests
 from collections import defaultdict
 from tqdm import tqdm
 from fireworks.client import Fireworks
+from ollama import chat
+from ollama import ChatResponse
 
 class FireworkRunner:
     def __init__(self, api_key):
@@ -53,6 +55,20 @@ class FireworkRunner:
         # print(ans)
         ans = ans.lower().strip()
         print(ans)
+        return ans
+
+    def run_ollama(self, prompt, model):
+        response: ChatResponse = chat(
+        model=model, 
+        messages=[
+        {
+            'role': 'user',
+            'content': prompt
+        }],
+        options={"num_predict":1024,
+                "temperature": 0})
+        ans = response['message']['content']
+        ans = ans.lower().strip()
         return ans
     
     
@@ -109,7 +125,7 @@ def main():
     parser = argparse.ArgumentParser(description="Run Firework AI models with different input types.")
     valid_input_types = ["layer0", "layer1", "layer2", "cot", "rag", "one_shot", "two_shot", "three_shot", "four_shot", "five_shot",
                          "cot2", "rag2", "one_shot2", "two_shot2", "three_shot2", "four_shot2", "five_shot2"]
-    parser.add_argument("--function", choices=["run_fetch", "run_fire"], required=True, help="Select the function to execute.")
+    parser.add_argument("--function", choices=["run_fetch", "run_fire", "run_ollama"], required=True, help="Select the function to execute.")
     parser.add_argument("--input_type", choices=valid_input_types, required=True, help="Specify the input type.")
     parser.add_argument("--model", required=True, help="Model from Fireworks.ai")
     args = parser.parse_args()
