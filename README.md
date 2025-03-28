@@ -10,7 +10,15 @@ Install the following dependencies:
 ```bash
 pip install -r requirements.txt
 ```
-To run benchmark evaluation:
+Also install Ollama server:
+```bash
+curl -fsSL https://ollama.com/install.sh | sh
 ```
-python evaluate --function run_fetch/run_fire --input_type <benchmark name> --model <model from fireworks.ai>
+Then start ollama server and pull the model
+```bash
+ollama pull <model>
+```
+To run benchmark evaluation:
+```bash
+python evaluate --function run_fetch/run_fire/run_ollama --input_type <benchmark name> --model <model name>
 ```
